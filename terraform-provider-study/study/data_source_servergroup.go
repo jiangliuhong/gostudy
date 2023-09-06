@@ -39,7 +39,7 @@ func datasourceServerGroupRead(ctx context.Context, data *schema.ResourceData, m
 	}
 	log.Println("b:", b)
 	log.Println("sg:", sg)
-	if b {
+	if sg.Name != "" {
 		data.SetId(sg.Name)
 		err := data.Set("policys", sg.Policys)
 		if err != nil {
@@ -64,8 +64,10 @@ func serverGroupsGroupEachPageHandleToFindByName(name string, sg *ServerGroup) f
 			Name:    name,
 			Policys: []string{"test1", "test2"},
 		}
-		sg.Name = group.Name
-		sg.Policys = group.Policys
+		if group.Name != "empty" {
+			sg.Name = group.Name
+			sg.Policys = group.Policys
+		}
 		return true, nil
 	}
 }

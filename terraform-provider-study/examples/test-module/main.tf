@@ -8,10 +8,14 @@ terraform {
 }
 
 data "study_server_group" "d_test" {
-  name = "empty2"
+  name = "empty"
+}
+
+locals {
+  count = data.study_server_group.d_test.id == null ? 1 : 0
 }
 resource "study_server_group" "r_test" {
-  count = data.study_server_group.d_test.id == null ? 1 : 0
+  count = local.count
   name  = "empty222"
 }
 
