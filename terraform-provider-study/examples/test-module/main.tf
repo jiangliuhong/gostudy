@@ -8,7 +8,7 @@ terraform {
 }
 
 data "study_server_group" "d_test" {
-  name = "empty"
+  name = "no_empty"
 }
 
 locals {
