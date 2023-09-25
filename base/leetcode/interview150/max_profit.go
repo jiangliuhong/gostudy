@@ -55,3 +55,11 @@ func maxInt(n1, n2 int) int {
 		return n2
 	}
 }
+
+func minInt(n1, n2 int) int {
+	if n1 < n2 {
+		return n1
+	} else {
+		return n2
+	}
+}
