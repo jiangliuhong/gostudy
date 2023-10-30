@@ -49,22 +49,10 @@ sdgjlkdsjg
 sdgjlkdsjgldsjg
 sdgj
 sd
-[0m[1mPlan:[0m 1 to add, 0 to change, 0 to destroy.
+\u001b[0m\u001b[1mPlan:\u001b[0m 1 to add, 0 to change, 0 to destroy.
 大概是佳丽就是大概佳丽的世界观
 `
-
-	//start := "Terraform will perform the following actions:"
-	// 创建一个正则表达式来匹配所需的文本
-	//regex := regexp.MustCompile(start + `[\s\S]*?Plan: \d+ to add, \d+ to change, \d+ to destroy\.`)
-
-	// 创建一个正则表达式来匹配指定模式
-	//regex := regexp.MustCompile(`Terraform will perform the following actions:(?s:.*?)Plan: \d+ to add, \d+ to change, \d+ to destroy\.`)
-	regex := regexp.MustCompile(`Terraform will perform the following actions:(?s:.*?)\[\d+mPlan: \d+ to add, \d+ to change, \d+ to destroy\.`)
-
-	// 查找所有匹配的子串
-	//matches := regex.FindAllStringSubmatch(input, -1)
-	matches := regex.FindAllString(input, -1)
-	if len(matches) > 0 {
-		fmt.Println(matches[0])
-	}
+	re := regexp.MustCompile("\x1b\\[[0-9;]*[a-zA-Z]")
+	input = re.ReplaceAllString(input, "")
+	fmt.Println(input)
 }

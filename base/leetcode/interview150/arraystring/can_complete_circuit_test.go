@@ -1,4 +1,4 @@
-package interview150
+package arraystring
 
 import "testing"
 
