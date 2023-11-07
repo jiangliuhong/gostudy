@@ -1,9 +1,10 @@
 terraform {
   required_providers {
     study = {
-      source  = "test/study"
+      source  = "test2/study"
       version = "0.0.1"
     }
+
   }
 }
 
@@ -29,3 +30,12 @@ output "name_d" {
 output "name_r" {
   value = study_server_group.r_test.*.name
 }
+
+resource "study_server_group" "r_one_test" {
+  name = "empty2223333"
+}
+
+output "test_array_id" {
+  value = study_server_group.r_one_test.test_array
+}
+

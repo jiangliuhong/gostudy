@@ -2,6 +2,7 @@ package study
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
@@ -25,8 +26,33 @@ func resourceServerGroup() *schema.Resource {
 				Computed: true,
 				Elem:     &schema.Schema{Type: schema.TypeString},
 			},
+			"test_array": {
+				Type:     schema.TypeList,
+				Optional: true,
+				Computed: true,
+				MaxItems: 1,
+				Elem: &schema.Resource{
+					Schema: map[string]*schema.Schema{
+						"id": {
+							Type:     schema.TypeString,
+							Optional: true,
+							Computed: true,
+						},
+						"name": {
+							Type:     schema.TypeString,
+							Optional: true,
+							Computed: true,
+						},
+					},
+				},
+			},
 		},
 	}
+}
+
+type TestArrayItem struct {
+	Id   string `json:"id"`
+	Name string `json:"name"`
 }
 
 func resourceServerGroupRead(ctx context.Context, data *schema.ResourceData, meta interface{}) diag.Diagnostics {
@@ -37,6 +63,17 @@ func resourceServerGroupRead(ctx context.Context, data *schema.ResourceData, met
 }
 func resourceServerGroupCreate(ctx context.Context, data *schema.ResourceData, meta interface{}) diag.Diagnostics {
 	data.Set("ips", []string{})
+	tra := []*TestArrayItem{
+		{Id: "1", Name: "2"},
+	}
+	//转为map数组
+	b, _ := json.Marshal(tra)
+	var testArray []map[string]interface{}
+	_ = json.Unmarshal(b, &testArray)
+	err := data.Set("test_array", &testArray)
+	if err != nil {
+		return diag.FromErr(err)
+	}
 	return resourceServerGroupRead(ctx, data, meta)
 }
 
