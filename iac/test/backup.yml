@@ -5,11 +5,21 @@
       file:
         path: "/root/test/{{name}}"
         state: directory
-        mode: 755
-    - name: download zip
-      get_url:
-        url: http://yum.idcos.com/cloudcmp/backup/cloud-cpg.5.9.0_20231028.tar.gz
-        dest: "/root/test/{{name}}"
-        mode: 755
-        force: yes
-        validate_certs: no
+        mode: 0644
+    #    - name: download zip
+    #      get_url:
+    #        url: http://yum.idcos.com/cloudcmp/backup/cloud-cpg.5.9.0_20231028.tar.gz
+    #        dest: "/root/test/{{name}}"
+    #        mode: 755
+    #        force: yes
+    #        validate_certs: no
+    - name: generate sql dump
+      copy:
+        dest: "/root/test/{{name}}/cmp.sql"
+        content: "这里是测试的sql"
+        mode: 0644
+    - name: fetch to local
+      fetch:
+        src: "/root/test/{{name}}/cmp.sql"
+        dest: "backup_result/cmp.sql"
+        flat: yes

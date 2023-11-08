@@ -52,12 +52,12 @@ func main() {
 	// 资产清单和变量文件，也可以是一个 map 类型来作为变量，就无需引入文件
 	ansiblePlaybookOptions := &playbook.AnsiblePlaybookOptions{
 		Inventory: "cmp-510308-core.yun.idcos,",
-		ExtraVars: map[string]interface{}{
-			"name": randStr(5),
-		},
-		//ExtraVarsFile: []string{
-		//	"@vars-file1.yml",
+		//ExtraVars: map[string]interface{}{
+		//	"name": randStr(5),
 		//},
+		ExtraVarsFile: []string{
+			"@./test/vars-file.yml",
+		},
 	}
 
 	durationBuff := new(bytes.Buffer)
@@ -77,7 +77,7 @@ func main() {
 
 	// 构造 ansible
 	playbook := &playbook.AnsiblePlaybookCmd{
-		Playbooks:         []string{"./backup.yml"},
+		Playbooks:         []string{"./test/backup.yml"},
 		ConnectionOptions: ansiblePlaybookConnectionOptions,
 		Options:           ansiblePlaybookOptions,
 		Exec:              executorTimeMeasurement,
