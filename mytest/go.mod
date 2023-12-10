@@ -1,4 +1,4 @@
-module sqlstat
+module mytest
 
 go 1.20
 

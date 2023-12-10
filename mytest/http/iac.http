@@ -1,0 +1,611 @@
+### 解决
+GET {{endpoint}}/api/v1/projects?pageNo=1&pageSize=0&withStat=true
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/auth/me
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/projects/p-clq3qqh36jtjc957cfag/statistics
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/envs?pageSize=10&currentPage=1
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/envs?pageSize=10&status=running&deploying=true&currentPage=1
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/envs?pageSize=10&status=active&currentPage=1
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/templates?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/templates/tfversions
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/vcs?status=enable&isShowDefaultVcs=true&pageSize=0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/variables?scope=template
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/vcs/v-c6je0f38ttr4udi24co0/repo?currentPage=1&pageSize=50
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/vcs/v-c6je0f38ttr4udi24co0/branch?repoId=1782
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/vcs/v-c6je0f38ttr4udi24co0/tag?repoId=1782
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/templates/autotfversion?repoId=1782&vcsBranch=v1.0.0&vcsId=v-c6je0f38ttr4udi24co0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+POST {{endpoint}}/api/v1/templates/checks
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+{"vcsId":"v-c6je0f38ttr4udi24co0","repoId":"1782","repoFullName":"keli/cloudiac-mock-uf-single-center","repoRevision":"v1.0.0","tfVersion":"tfversion_auto_match"}
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/vcs/v-c6je0f38ttr4udi24co0/repos/variables?repoRevision=v1.0.0&repoId=1782
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/vcs/v-c6je0f38ttr4udi24co0/repos/tfvars?repoRevision=v1.0.0&repoId=1782
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/vcs/v-c6je0f38ttr4udi24co0/repos/playbook?repoRevision=v1.0.0&repoId=1782
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/keys?pageSize=0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/var_groups/relationship/all?objectType=org
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/policies/groups?pageSize=0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+POST {{endpoint}}/api/v1/templates/checks
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+{"name":"xinchuang_test","description":"过后就赶紧换个环境"}
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/projects?status=enable&pageSize=0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+POST {{endpoint}}/api/v1/templates
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+{"variables":[{"scope":"template","sensitive":false,"type":"environment","options":null,"name":"xin","value":"fghfhg"}],"name":"xinchuang_test","description":"过后就赶紧换个环境","vcsId":"v-c6je0f38ttr4udi24co0","repoId":"1782","repoFullName":"keli/cloudiac-mock-uf-single-center","repoRevision":"v1.0.0","tfVersion":"1.5.6","tfVarsFile":"","playbook":"","keyId":"","varGroupIds":[],"delVarGroupIds":[],"projectId":["p-clq3qqh36jtjc957cfag","p-cb39q6vlgt4e4oeql6j0"]}
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/variables?scope=org
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+PUT {{endpoint}}/api/v1/variables/scope/org/org-cb39pjflgt4e4oeql6i0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+{"variables":[{"scope":"org","sensitive":false,"type":"environment","options":null,"name":"sdf","value":"gh","description":"asad"}]}
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/system_config/registry/addr
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/projects/p-cb39q6vlgt4e4oeql6j0/statistics
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/projects/p-cb39q6vlgt4e4oeql6j0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+PUT {{endpoint}}/api/v1/projects/p-cb39q6vlgt4e4oeql6j0
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+{"name":"IaC云管","description":"基于iDCOS平台能力和CloudIaC的基础设施即代码的适配能力（Provider）整合云霁和合作伙伴的产品，形成面向大客户的一站式解决方案。yy"}
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/projects/authorization/users?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/ldap/project_ous?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/projects/resources/filters
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/projects/resources?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/assets/font-faces/Ubuntu-B-2.ttf
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/policies/summary
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/policies/templates?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/policies/envs?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/policies/groups?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+###
+GET {{endpoint}}/api/v1/policies?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
+IaC-Project-Id: p-clq3qqh36jtjc957cfag
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
