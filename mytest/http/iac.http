@@ -4,8 +4,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 
 > {%
@@ -20,8 +20,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -30,13 +30,13 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
 %}
 
 ### 解决
-GET {{endpoint}}/api/v1/projects/p-clq3qqh36jtjc957cfag/statistics
+GET {{endpoint}}/api/v1/projects/{{projectId}}/statistics
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -50,8 +50,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -65,8 +65,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -80,8 +80,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -95,8 +95,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -110,8 +110,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -125,8 +125,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -140,8 +140,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -155,8 +155,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -170,8 +170,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -185,8 +185,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -200,8 +200,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -215,8 +215,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 {"vcsId":"v-c6je0f38ttr4udi24co0","repoId":"1782","repoFullName":"keli/cloudiac-mock-uf-single-center","repoRevision":"v1.0.0","tfVersion":"tfversion_auto_match"}
 
@@ -232,8 +232,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -247,8 +247,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -262,8 +262,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -277,8 +277,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -292,8 +292,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -307,8 +307,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -322,8 +322,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 {"name":"xinchuang_test","description":"过后就赶紧换个环境"}
 
@@ -339,8 +339,8 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -354,10 +354,10 @@ Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
-{"variables":[{"scope":"template","sensitive":false,"type":"environment","options":null,"name":"xin","value":"fghfhg"}],"name":"xinchuang_test","description":"过后就赶紧换个环境","vcsId":"v-c6je0f38ttr4udi24co0","repoId":"1782","repoFullName":"keli/cloudiac-mock-uf-single-center","repoRevision":"v1.0.0","tfVersion":"1.5.6","tfVarsFile":"","playbook":"","keyId":"","varGroupIds":[],"delVarGroupIds":[],"projectId":["p-clq3qqh36jtjc957cfag","p-cb39q6vlgt4e4oeql6j0"]}
+{"variables":[{"scope":"template","sensitive":false,"type":"environment","options":null,"name":"xin","value":"fghfhg"}],"name":"xinchuang_test","description":"过后就赶紧换个环境","vcsId":"v-c6je0f38ttr4udi24co0","repoId":"1782","repoFullName":"keli/cloudiac-mock-uf-single-center","repoRevision":"v1.0.0","tfVersion":"1.5.6","tfVarsFile":"","playbook":"","keyId":"","varGroupIds":[],"delVarGroupIds":[],"projectId":["{{projectId}}","p-cb39q6vlgt4e4oeql6j0"]}
 
 > {%
     client.test("status->success", function() {
@@ -365,14 +365,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/variables?scope=org
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -380,14 +380,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
-PUT {{endpoint}}/api/v1/variables/scope/org/org-cb39pjflgt4e4oeql6i0
+### 解决
+PUT {{endpoint}}/api/v1/variables/scope/org/{{orgId}}
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 {"variables":[{"scope":"org","sensitive":false,"type":"environment","options":null,"name":"sdf","value":"gh","description":"asad"}]}
 
@@ -397,14 +397,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/system_config/registry/addr
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -412,14 +412,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/projects/p-cb39q6vlgt4e4oeql6j0/statistics
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -427,14 +427,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/projects/p-cb39q6vlgt4e4oeql6j0
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -442,14 +442,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 PUT {{endpoint}}/api/v1/projects/p-cb39q6vlgt4e4oeql6j0
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 {"name":"IaC云管","description":"基于iDCOS平台能力和CloudIaC的基础设施即代码的适配能力（Provider）整合云霁和合作伙伴的产品，形成面向大客户的一站式解决方案。yy"}
 
@@ -459,14 +459,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/projects/authorization/users?currentPage=1&pageSize=10
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -474,14 +474,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/ldap/project_ous?currentPage=1&pageSize=10
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -489,14 +489,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/projects/resources/filters
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -504,14 +504,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/projects/resources?currentPage=1&pageSize=10
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -519,29 +519,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
-GET {{endpoint}}/assets/font-faces/Ubuntu-B-2.ttf
-Accept: application/json
-Access-Token: Bearer {{auth_token}}
-Authorization: {{auth_token}}
-Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
-
-> {%
-    client.test("status->success", function() {
-        client.assert(response.status === 200, "Response status is not 200");
-    });
-%}
-
-###
+### 解决
 GET {{endpoint}}/api/v1/policies/summary
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -549,14 +534,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/policies/templates?currentPage=1&pageSize=10
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -564,14 +549,14 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/policies/envs?currentPage=1&pageSize=10
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -579,14 +564,43 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
     });
 %}
 
-###
+### 解决
 GET {{endpoint}}/api/v1/policies/groups?currentPage=1&pageSize=10
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
-IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+
+### 解决
+GET {{endpoint}}/api/v1/policies?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
+
+> {%
+    client.test("status->success", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
+### 解决
+GET {{endpoint}}/api/v1/templates?currentPage=1&pageSize=10
+Accept: application/json
+Access-Token: Bearer {{auth_token}}
+Authorization: {{auth_token}}
+Content-Type: application/json
+IaC-Org-Id: {{orgId}}
+IaC-Project-Id: {{projectId}}
 
 > {%
     client.test("status->success", function() {
@@ -595,17 +609,18 @@ IaC-Project-Id: p-clq3qqh36jtjc957cfag
 %}
 
 ###
-GET {{endpoint}}/api/v1/policies?currentPage=1&pageSize=10
+PUT {{endpoint}}/api/v1/variables/scope/project/p-clq3shp36jtjc957cff0
 Accept: application/json
 Access-Token: Bearer {{auth_token}}
 Authorization: {{auth_token}}
 Content-Type: application/json
 IaC-Org-Id: org-cb39pjflgt4e4oeql6i0
-IaC-Project-Id: p-clq3qqh36jtjc957cfag
+IaC-Project-Id: p-cb39q6vlgt4e4oeql6j0
+
+{"variables":[{"id":"var-clqnrrp36jtuj7tjnnj0","scope":"project","type":"environment","name":"sdf","value":"gh22","description":"asad","options":null,"orgId":"org-cb39pjflgt4e4oeql6i0","projectId":"p-cb39q6vlgt4e4oeql6j0","tplId":"","envId":""}]}
 
 > {%
     client.test("status->success", function() {
         client.assert(response.status === 200, "Response status is not 200");
     });
 %}
-
